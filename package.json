@@ -4,7 +4,7 @@
   "description": "A native JS slider \u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[Dtwo-dimensional slider",
   "main": "index.js",
   "scripts": {
-    "minify": "node-sass style.scss style.min.css --output-style compressed"
+    "minify": "node-sass style.scss style.min.css --output-style compressed --watch"
   },
   "repository": {
     "type": "git",
