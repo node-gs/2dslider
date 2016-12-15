@@ -22,5 +22,8 @@
   "bugs": {
     "url": "https://github.com/node-gs/2dslider/issues"
   },
-  "homepage": "https://github.com/node-gs/2dslider#readme"
+  "homepage": "https://github.com/node-gs/2dslider#readme",
+  "dependencies": {
+    "node-sass": "^4.0.0"
+  }
 }
