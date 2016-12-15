@@ -1,0 +1,26 @@
+{
+  "name": "2dslider",
+  "version": "0.0.1",
+  "description": "A native JS slider \u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[Dtwo-dimensional slider",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/node-gs/2dslider.git"
+  },
+  "keywords": [
+    "native",
+    "javascript",
+    "slider",
+    "two-dimensional",
+    "slider"
+  ],
+  "author": "Gerard Simpson",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/node-gs/2dslider/issues"
+  },
+  "homepage": "https://github.com/node-gs/2dslider#readme"
+}
