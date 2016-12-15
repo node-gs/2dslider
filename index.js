@@ -24,16 +24,22 @@ function showSlides(n) {
   }
 
   for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-    slides[i].className = slides[i].className.replace(" active", " ");
+    slides[i].className = slides[i].className
+      .replace(" active", "")
+      .replace(" active-previous", "")
+      .replace(" active-next", "");
   }
   for (i = 0; i < dots.length; i++) {
     dots[i].className = dots[i].className.replace(" active", "");
   }
 
-  slides[slideIndex-1].style.display = "block";
+  // slides[slideIndex-1].style.display = "block";
 
   slides[slideIndex-1].className += " active";
+
+  if(slideIndex < slides.length) {slides[slideIndex].className += " active-next";}
+
+  if(slideIndex > 1) { slides[slideIndex-2].className += " active-previous";}
 
   dots[slideIndex-1].className += " active";
 }

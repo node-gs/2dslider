@@ -1,14 +1,14 @@
 {
   "name": "2dslider",
   "version": "0.0.1",
-  "description": "A native JS slider \u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[Dtwo-dimensional slider",
+  "description": "A native JS slider two-dimensional slider",
   "main": "index.js",
   "scripts": {
-    "minify": "node-sass style.scss style.min.css --output-style compressed --watch"
+    "minify": "node-sass style.scss style.min.css --output-style compressed"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/node-gs/2dslider.git"
+    "url": "https://github.com/node-gs/2dslider.git"
   },
   "keywords": [
     "native",
