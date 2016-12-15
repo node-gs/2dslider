@@ -12,8 +12,7 @@ function currentSlide(n) {
 
 function showSlides(n) {
   let i;
-  let slides = document.getElementsByClassName("mySlides");
-  let dots = document.getElementsByClassName("dot");
+  let slides = document.getElementsByClassName("slides");
 
   if (n > slides.length) {
     slideIndex = 1
@@ -29,11 +28,6 @@ function showSlides(n) {
       .replace(" active-previous", "")
       .replace(" active-next", "");
   }
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
-
-  // slides[slideIndex-1].style.display = "block";
 
   slides[slideIndex-1].className += " active";
 
@@ -41,5 +35,25 @@ function showSlides(n) {
 
   if(slideIndex > 1) { slides[slideIndex-2].className += " active-previous";}
 
-  dots[slideIndex-1].className += " active";
+}
+
+document.onkeydown = checkKey;
+
+function checkKey(e) {
+
+    e = e || window.event;
+
+    if (e.keyCode == '38') {
+        // up arrow
+    }
+    else if (e.keyCode == '40') {
+        // down arrow
+    }
+    else if (e.keyCode == '37') {
+       plusSlides(-1);
+    }
+    else if (e.keyCode == '39') {
+       plusSlides(1);
+    }
+
 }
