@@ -40,18 +40,22 @@
 .slides.active {
   z-index: 1;
   text-align: center;
-  transition: .6s ease;
 }
 .slides.active-previous {
+  .paneltext { width: 100%;}
   transform: translate(-100%,-50%) scale(.9,.9);;
   z-index: 0;
   text-align: left;
-  transition: .6s ease;
 }
 .slides.active-next {
+  .paneltext { width: 100%;}
   transform: translate(0, -50%) scale(.9,.9);;
   z-index: 0;
   text-align: right;
-  transition: .6s ease;
 }
 
+.paneltext {
+  transition: all 1s;
+  width: 50%;
+  margin: 0 auto;
+} 
