@@ -21,12 +21,12 @@ function showSlides(n) {
   if (n < 1) {
     slideIndex = slides.length
   }
-
+  console.log(slides[slideIndex-1].classList);
   for (i = 0; i < slides.length; i++) {
-    slides[i].className = slides[i].className
-      .replace(" active", "")
-      .replace(" active-previous", "")
-      .replace(" active-next", "");
+    slides[i].className = slides[i].className.replace(" active", "");
+    slides[i].className = slides[i].className.replace(" active-previous", "");
+    slides[i].className = slides[i].className.replace(" active-next", "");
+
   }
 
   slides[slideIndex-1].className += " active";
@@ -35,6 +35,7 @@ function showSlides(n) {
 
   if(slideIndex > 1) { slides[slideIndex-2].className += " active-previous";}
 
+
 }
 
 document.onkeydown = checkKey;
@@ -42,14 +43,7 @@ document.onkeydown = checkKey;
 function checkKey(e) {
 
     e = e || window.event;
-
-    if (e.keyCode == '38') {
-        // up arrow
-    }
-    else if (e.keyCode == '40') {
-        // down arrow
-    }
-    else if (e.keyCode == '37') {
+    if (e.keyCode == '37') {
        plusSlides(-1);
     }
     else if (e.keyCode == '39') {
