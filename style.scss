@@ -5,9 +5,10 @@
   transform: translate(-50%,-50%);
   transition: .6s ease;
 }
-.slideshow-container .slides:not(.active):not(.active-previous):not(.active-next) {
-  display:none;
+.slideshow-container .slides:not(.active):not(.prev):not(.next) {
   cursor: url(hold.png), auto;
+  transform: scale(0.8, 0.8) translate(-62%, -64%);
+  visibility: hidden;   
 }
 .slides.active {
   z-index: 1;
@@ -15,14 +16,14 @@
   cursor: url(hold.png), auto;
   img {box-shadow: 0px 0px 1px #888888;}
 }
-.slides.active-previous {
+.slides.prev {
   .paneltext { width: 100%;}
-  transform: translate(-95%,-50%) scale(.9,.9);;
+  transform: translate(-95%,-50%) scale(.9,.9);
   z-index: 0;
   text-align: left;
   cursor: url(arrow-left.png), auto;
 }
-.slides.active-next {
+.slides.next {
   .paneltext { width: 100%;}
   transform: translate(-5%, -50%) scale(.9,.9);;
   z-index: 0;
@@ -32,7 +33,7 @@
 
 .paneltext {
   transition: all 1s;
-  width: 50%;
+  width: 65%;
   margin: 0 auto;
 }
 
